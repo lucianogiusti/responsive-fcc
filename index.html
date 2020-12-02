@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <nav id="navbar">
+        <header>JS documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Global_variables">Global variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Constants">Constants</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_types">Data Types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+                language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
+                objects of its environment to provide programmatic control over them.
+            </p>
+        </section>
+        <section class="main-section" id="Javascript_and_Java">
+            <header>JavaScript and Java</header>
+            <p>
+                JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
+                language resembles Java but does not have Java's static typing and strong type checking. JavaScript
+                follows most Java expression syntax, naming conventions and basic control-flow constructs which was the
+                reason why it was renamed from LiveScript to JavaScript.
+            </p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                You use variables as symbolic names for values in your application. The names of variables, called
+                identifiers, conform to certain rules.
+            </p>
+            <p>
+                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
+                characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the
+                characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+            <p>
+                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
+                escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and
+                _name.
+            </p>
+        </section>
+        <section class="main-section" id="Global_variables">
+            <header>Global variables</header>
+            <p>
+                Global variables are in fact properties of the global object. In web pages the global object is window,
+                so you can set and access global variables using the window.variable syntax.
+            </p>
+            <code>
+                var x = 42.
+            </code><br>
+            <code>
+                x = 42.
+            </code><br>
+            <code>
+                let y = 13.
+            </code>
+            <p>
+                Consequently, you can access global variables declared in one window or frame from another window or
+                frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared
+                in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+            </p>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>
+                You can create a read-only, named constant with the const keyword. The syntax of a constant identifier
+                is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
+                contain alphabetic, numeric, or underscore characters.
+                <br><br>
+                <code>
+                    const PI = 3.14;
+                </code>
+            </p>
+            <p>
+                A constant cannot change value through assignment or be re-declared while the script is running. It has
+                to be initialized to a value.
+            </p>
+            <p>
+                The scope rules for constants are the same as those for let block scope variables. If the const keyword
+                is omitted, the identifier is assumed to represent a variable
+            </p>
+            <code>
+                const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+            </code>
+        </section>
+        <br>
+        <section class="main-section" id="Data_Types">
+            <header>Data types</header>
+            <ul>
+                <li>Boolean. true and false.</li>
+                <li>undefined. A top-level property whose value is undefined.</li>
+                <li>Number. 42 or 3.14159.</li>
+                <li>String. "Howdy"</li>
+                <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the
+                    same as Null, NULL, or any other variant.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank"></a>MDN</p>
+        </section>
+    </main>
+</body>
+
+</html>
